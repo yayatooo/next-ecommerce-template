@@ -6,7 +6,7 @@
     "migrate": "bun x prisma migrate dev",
     "generate": "bun x prisma generate",
     "dev": "bun run next dev",
-    "build": "bun run next build",
+    "build": "bun run build",
     "start": "bun run next start",
     "lint": "next lint"
   },

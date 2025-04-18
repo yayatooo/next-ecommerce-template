@@ -4,7 +4,7 @@ FROM oven/bun:latest
 WORKDIR /app
 
 # Copy and install dependencies
-COPY bun.lockb bunfig.toml package.json ./
+COPY bun.lockb package.json ./
 RUN bun install
 
 # Copy the rest of the app
@@ -14,4 +14,4 @@ COPY . .
 RUN bun run build
 
 # Start the app
-CMD ["bun", "start"]
+CMD ["bun", "run", "start"]
